@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.7",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
     "js-cookie": "^3.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -22,15 +23,18 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -45,6 +49,11 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-react": "^7.23.3",
+    "css-loader": "^6.10.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
   }
 }
